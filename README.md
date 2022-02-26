@@ -30,7 +30,7 @@ tags:
 然后用`item.find('img').get('data-src')`将图片链接进行提取，这样一来就有了爬虫的主程序
 
 运行程序之后可以见到：  
-<img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/5.jpg" width = "300" height = "300" alt="" align=center />  
+<img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/5.jpg" width = "400" height = "300" alt="" align=center />  
 
 运行成功，我们去文件夹里看看效果  
 ![1](https://github.com/Jeffrey-love/Crawler/blob/main/picture/1.jpg)  

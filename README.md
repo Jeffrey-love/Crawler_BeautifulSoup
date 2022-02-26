@@ -26,8 +26,30 @@ tags:
 如下图：  
 <img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/4.jpg" width = "500" height = "300" alt="" align=center />  
 
-还是比较容易定位到的，这样我们就可以先用`list = soup.find('div',class_='lst').find_all('a',class_='u-card')`把包含img标签的a标签先筛选出来  
-然后用`item.find('img').get('data-src')`将图片链接进行提取，这样一来就有了爬虫的主程序
+还是比较容易定位到的，这样我们就可以先用`list = soup.find('div',class_='lst').find_all('a',class_='u-card')`把包含img标签的a标签先筛选出来,  
+然后用`item.find('img').get('data-src')`将图片链接进行提取，这样一来就有了爬虫的主程序[^3]
+[3]:完整代码见文件BeautifulSoup.py,含详细注释
+  
+
+```python
+    url = "http://www.4399dmw.com/search/dh-9-0-0-0-0-{}-0/".format(page)
+    resp = requests.get(url=url,headers=headers,proxies=proxies)
+    html_doc = resp.content.decode("utf-8")
+    soup = BeautifulSoup(html_doc,'lxml')
+    # 把所有class值为lst的div标签取出来
+    list = soup.find('div',class_='lst').find_all('a',class_='u-card')
+    pic_urls = []
+    for item in list:
+        # 提取图片链接
+        pic_url = item.find('img').get('data-src')
+        pic_urls.append(pic_url)
+
+    for tar,url in enumerate(pic_urls):
+        # 因为url的格式是“//xxx.com/xxxx.img”，前面少了协议，所以要加上
+        urln = "http:"+url
+        save_img(urln,tar)
+```
+---
 
 运行程序之后可以见到：  
 <img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/5.jpg" width = "400" height = "300" alt="" align=center />  

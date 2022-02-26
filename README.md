@@ -28,7 +28,7 @@ tags:
 
 还是比较容易定位到的，这样我们就可以先用`list = soup.find('div',class_='lst').find_all('a',class_='u-card')`把包含img标签的a标签先筛选出来,  
 然后用`item.find('img').get('data-src')`将图片链接进行提取，这样一来就有了爬虫的主程序[^3]
-[3]:完整代码见文件BeautifulSoup.py,含详细注释
+[^3]:完整代码见文件BeautifulSoup.py,含详细注释
   
 
 ```python

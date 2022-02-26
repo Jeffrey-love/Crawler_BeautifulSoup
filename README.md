@@ -27,7 +27,7 @@ tags:
 <img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/4.jpg" width = "500" height = "300" alt="" align=center />  
 
 还是比较容易定位到的，这样我们就可以先用`list = soup.find('div',class_='lst').find_all('a',class_='u-card')`把包含img标签的a标签先筛选出来,  
-然后用`item.find('img').get('data-src')`将图片链接进行提取，这样一来就有了爬虫的主程序[^3]
+然后用`item.find('img').get('data-src')`将图片链接进行提取，这样一来就有了爬虫的主程序[^3]:smile_cat:
 [^3]:完整代码见文件BeautifulSoup.py,含详细注释
   
 
@@ -56,5 +56,5 @@ tags:
 
 运行成功，我们去文件夹里看看效果  
 ![1](https://github.com/Jeffrey-love/Crawler/blob/main/picture/1.jpg)  
-向柯南致敬！！！  
+向柯南致敬！！！  :smile:  
 <img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/2.jpg" width = "450" height = "300" alt="" align=center />  

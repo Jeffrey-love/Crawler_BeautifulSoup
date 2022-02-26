@@ -35,4 +35,4 @@ tags:
 运行成功，我们去文件夹里看看效果  
 ![1](https://github.com/Jeffrey-love/Crawler/blob/main/picture/1.jpg)  
 向柯南致敬！！！  
-<img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/2.jpg" width = "300" height = "300" alt="" align=center />  
+<img src="https://github.com/Jeffrey-love/Crawler/blob/main/picture/2.jpg" width = "450" height = "300" alt="" align=center />  

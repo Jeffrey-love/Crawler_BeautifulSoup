@@ -8,6 +8,7 @@ description: 一个简单的爬虫程序
 tags:
   - python
   - 爬虫
+  - BeautifulSoup
 ---
 
 # A crawler program written in python that uses the BeautifulSoup framework  
